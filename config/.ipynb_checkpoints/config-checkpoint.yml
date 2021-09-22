@@ -1,0 +1,26 @@
+info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/tests/test_safedist_new_zj/preprocess_param/camera_all.pkl'
+        concat: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/tests/test_safedist_new_zj/preprocess_param/wg_0618.pkl'
+    origin_folder: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/tests/test_safedist_new_zj/data/img_raw0922'
+img_folder: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/tests/test_safedist_new_zj/data_cut'
+output_folder: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/tests/test_safedist_new_zj/output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
