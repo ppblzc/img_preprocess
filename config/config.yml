@@ -22,5 +22,5 @@ model:
             cell: 0.9
             edge: 0.9
             mid: 0.9
-        model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
 img_type: jpg
