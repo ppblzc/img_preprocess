@@ -1,0 +1,441 @@
+2021-09-23 11:10:46,150 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:10:46,150 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:10:46,161 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:10:49,288 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:10:49,611 - test_and_evaluation - [1/12] --------------> finish predictor ------------->
+2021-09-23 11:10:49,611 - test_and_evaluation - [2/12] --------------> start predictor ------------->
+2021-09-23 11:10:49,892 - test_and_evaluation - [2/12] --------------> finish predictor ------------->
+2021-09-23 11:10:49,892 - test_and_evaluation - [3/12] --------------> start predictor ------------->
+2021-09-23 11:10:50,166 - test_and_evaluation - [3/12] --------------> finish predictor ------------->
+2021-09-23 11:10:50,166 - test_and_evaluation - [4/12] --------------> start predictor ------------->
+2021-09-23 11:10:50,440 - test_and_evaluation - [4/12] --------------> finish predictor ------------->
+2021-09-23 11:10:50,440 - test_and_evaluation - [5/12] --------------> start predictor ------------->
+2021-09-23 11:10:50,715 - test_and_evaluation - [5/12] --------------> finish predictor ------------->
+2021-09-23 11:10:50,716 - test_and_evaluation - [6/12] --------------> start predictor ------------->
+2021-09-23 11:10:50,996 - test_and_evaluation - [6/12] --------------> finish predictor ------------->
+2021-09-23 11:10:50,996 - test_and_evaluation - [7/12] --------------> start predictor ------------->
+2021-09-23 11:10:51,284 - test_and_evaluation - [7/12] --------------> finish predictor ------------->
+2021-09-23 11:10:51,285 - test_and_evaluation - [8/12] --------------> start predictor ------------->
+2021-09-23 11:10:51,577 - test_and_evaluation - [8/12] --------------> finish predictor ------------->
+2021-09-23 11:10:51,577 - test_and_evaluation - [9/12] --------------> start predictor ------------->
+2021-09-23 11:10:51,856 - test_and_evaluation - [9/12] --------------> finish predictor ------------->
+2021-09-23 11:10:51,856 - test_and_evaluation - [10/12] --------------> start predictor ------------->
+2021-09-23 11:10:52,142 - test_and_evaluation - [10/12] --------------> finish predictor ------------->
+2021-09-23 11:10:52,142 - test_and_evaluation - [11/12] --------------> start predictor ------------->
+2021-09-23 11:10:52,428 - test_and_evaluation - [11/12] --------------> finish predictor ------------->
+2021-09-23 11:10:52,428 - test_and_evaluation - [12/12] --------------> start predictor ------------->
+2021-09-23 11:10:52,723 - test_and_evaluation - [12/12] --------------> finish predictor ------------->
+2021-09-23 11:13:35,785 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:13:35,802 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:13:35,804 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:13:41,445 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:15:43,809 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:15:43,810 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:15:43,813 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:15:48,860 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:17:26,985 - test_and_evaluation - [1/12] --------------> finish predictor ------------->
+2021-09-23 11:17:44,715 - test_and_evaluation - [2/12] --------------> start predictor ------------->
+2021-09-23 11:18:10,668 - test_and_evaluation - [2/12] --------------> finish predictor ------------->
+2021-09-23 11:18:10,669 - test_and_evaluation - [3/12] --------------> start predictor ------------->
+2021-09-23 11:18:10,955 - test_and_evaluation - [3/12] --------------> finish predictor ------------->
+2021-09-23 11:18:10,955 - test_and_evaluation - [4/12] --------------> start predictor ------------->
+2021-09-23 11:18:11,236 - test_and_evaluation - [4/12] --------------> finish predictor ------------->
+2021-09-23 11:18:11,237 - test_and_evaluation - [5/12] --------------> start predictor ------------->
+2021-09-23 11:18:11,528 - test_and_evaluation - [5/12] --------------> finish predictor ------------->
+2021-09-23 11:18:11,529 - test_and_evaluation - [6/12] --------------> start predictor ------------->
+2021-09-23 11:18:11,806 - test_and_evaluation - [6/12] --------------> finish predictor ------------->
+2021-09-23 11:18:11,806 - test_and_evaluation - [7/12] --------------> start predictor ------------->
+2021-09-23 11:18:12,086 - test_and_evaluation - [7/12] --------------> finish predictor ------------->
+2021-09-23 11:18:12,086 - test_and_evaluation - [8/12] --------------> start predictor ------------->
+2021-09-23 11:18:12,373 - test_and_evaluation - [8/12] --------------> finish predictor ------------->
+2021-09-23 11:18:12,373 - test_and_evaluation - [9/12] --------------> start predictor ------------->
+2021-09-23 11:18:12,655 - test_and_evaluation - [9/12] --------------> finish predictor ------------->
+2021-09-23 11:18:12,656 - test_and_evaluation - [10/12] --------------> start predictor ------------->
+2021-09-23 11:18:12,944 - test_and_evaluation - [10/12] --------------> finish predictor ------------->
+2021-09-23 11:18:12,945 - test_and_evaluation - [11/12] --------------> start predictor ------------->
+2021-09-23 11:18:13,235 - test_and_evaluation - [11/12] --------------> finish predictor ------------->
+2021-09-23 11:18:13,236 - test_and_evaluation - [12/12] --------------> start predictor ------------->
+2021-09-23 11:18:13,527 - test_and_evaluation - [12/12] --------------> finish predictor ------------->
+2021-09-23 11:25:54,148 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:25:54,148 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:25:54,150 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:25:57,453 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:25:57,728 - test_and_evaluation - [1/12] --------------> finish predictor ------------->
+2021-09-23 11:25:57,729 - test_and_evaluation - [2/12] --------------> start predictor ------------->
+2021-09-23 11:25:58,025 - test_and_evaluation - [2/12] --------------> finish predictor ------------->
+2021-09-23 11:25:58,026 - test_and_evaluation - [3/12] --------------> start predictor ------------->
+2021-09-23 11:25:58,301 - test_and_evaluation - [3/12] --------------> finish predictor ------------->
+2021-09-23 11:25:58,302 - test_and_evaluation - [4/12] --------------> start predictor ------------->
+2021-09-23 11:25:58,582 - test_and_evaluation - [4/12] --------------> finish predictor ------------->
+2021-09-23 11:25:58,582 - test_and_evaluation - [5/12] --------------> start predictor ------------->
+2021-09-23 11:25:58,868 - test_and_evaluation - [5/12] --------------> finish predictor ------------->
+2021-09-23 11:25:58,869 - test_and_evaluation - [6/12] --------------> start predictor ------------->
+2021-09-23 11:25:59,165 - test_and_evaluation - [6/12] --------------> finish predictor ------------->
+2021-09-23 11:25:59,166 - test_and_evaluation - [7/12] --------------> start predictor ------------->
+2021-09-23 11:25:59,448 - test_and_evaluation - [7/12] --------------> finish predictor ------------->
+2021-09-23 11:25:59,449 - test_and_evaluation - [8/12] --------------> start predictor ------------->
+2021-09-23 11:25:59,727 - test_and_evaluation - [8/12] --------------> finish predictor ------------->
+2021-09-23 11:25:59,727 - test_and_evaluation - [9/12] --------------> start predictor ------------->
+2021-09-23 11:26:00,002 - test_and_evaluation - [9/12] --------------> finish predictor ------------->
+2021-09-23 11:26:00,003 - test_and_evaluation - [10/12] --------------> start predictor ------------->
+2021-09-23 11:26:00,280 - test_and_evaluation - [10/12] --------------> finish predictor ------------->
+2021-09-23 11:26:00,281 - test_and_evaluation - [11/12] --------------> start predictor ------------->
+2021-09-23 11:26:00,558 - test_and_evaluation - [11/12] --------------> finish predictor ------------->
+2021-09-23 11:26:00,558 - test_and_evaluation - [12/12] --------------> start predictor ------------->
+2021-09-23 11:26:00,850 - test_and_evaluation - [12/12] --------------> finish predictor ------------->
+2021-09-23 11:32:51,639 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:32:51,639 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:32:51,647 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:32:55,902 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:32:56,214 - test_and_evaluation - [1/12] --------------> finish predictor ------------->
+2021-09-23 11:32:56,215 - test_and_evaluation - [2/12] --------------> start predictor ------------->
+2021-09-23 11:32:56,544 - test_and_evaluation - [2/12] --------------> finish predictor ------------->
+2021-09-23 11:32:56,544 - test_and_evaluation - [3/12] --------------> start predictor ------------->
+2021-09-23 11:32:56,853 - test_and_evaluation - [3/12] --------------> finish predictor ------------->
+2021-09-23 11:32:56,853 - test_and_evaluation - [4/12] --------------> start predictor ------------->
+2021-09-23 11:32:57,319 - test_and_evaluation - [4/12] --------------> finish predictor ------------->
+2021-09-23 11:32:57,319 - test_and_evaluation - [5/12] --------------> start predictor ------------->
+2021-09-23 11:32:57,705 - test_and_evaluation - [5/12] --------------> finish predictor ------------->
+2021-09-23 11:32:57,706 - test_and_evaluation - [6/12] --------------> start predictor ------------->
+2021-09-23 11:32:58,045 - test_and_evaluation - [6/12] --------------> finish predictor ------------->
+2021-09-23 11:32:58,046 - test_and_evaluation - [7/12] --------------> start predictor ------------->
+2021-09-23 11:32:58,375 - test_and_evaluation - [7/12] --------------> finish predictor ------------->
+2021-09-23 11:32:58,375 - test_and_evaluation - [8/12] --------------> start predictor ------------->
+2021-09-23 11:32:58,794 - test_and_evaluation - [8/12] --------------> finish predictor ------------->
+2021-09-23 11:32:58,795 - test_and_evaluation - [9/12] --------------> start predictor ------------->
+2021-09-23 11:32:59,257 - test_and_evaluation - [9/12] --------------> finish predictor ------------->
+2021-09-23 11:32:59,258 - test_and_evaluation - [10/12] --------------> start predictor ------------->
+2021-09-23 11:32:59,669 - test_and_evaluation - [10/12] --------------> finish predictor ------------->
+2021-09-23 11:32:59,669 - test_and_evaluation - [11/12] --------------> start predictor ------------->
+2021-09-23 11:33:00,040 - test_and_evaluation - [11/12] --------------> finish predictor ------------->
+2021-09-23 11:33:00,056 - test_and_evaluation - [12/12] --------------> start predictor ------------->
+2021-09-23 11:33:00,481 - test_and_evaluation - [12/12] --------------> finish predictor ------------->
+2021-09-23 11:46:44,148 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:46:44,148 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:46:44,150 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:46:47,828 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:46:48,101 - test_and_evaluation - [1/12] --------------> finish predictor ------------->
+2021-09-23 11:46:48,101 - test_and_evaluation - [2/12] --------------> start predictor ------------->
+2021-09-23 11:46:48,373 - test_and_evaluation - [2/12] --------------> finish predictor ------------->
+2021-09-23 11:46:48,373 - test_and_evaluation - [3/12] --------------> start predictor ------------->
+2021-09-23 11:46:48,646 - test_and_evaluation - [3/12] --------------> finish predictor ------------->
+2021-09-23 11:46:48,646 - test_and_evaluation - [4/12] --------------> start predictor ------------->
+2021-09-23 11:46:48,919 - test_and_evaluation - [4/12] --------------> finish predictor ------------->
+2021-09-23 11:46:48,919 - test_and_evaluation - [5/12] --------------> start predictor ------------->
+2021-09-23 11:46:49,216 - test_and_evaluation - [5/12] --------------> finish predictor ------------->
+2021-09-23 11:46:49,216 - test_and_evaluation - [6/12] --------------> start predictor ------------->
+2021-09-23 11:46:49,492 - test_and_evaluation - [6/12] --------------> finish predictor ------------->
+2021-09-23 11:46:49,492 - test_and_evaluation - [7/12] --------------> start predictor ------------->
+2021-09-23 11:46:49,761 - test_and_evaluation - [7/12] --------------> finish predictor ------------->
+2021-09-23 11:46:49,761 - test_and_evaluation - [8/12] --------------> start predictor ------------->
+2021-09-23 11:46:50,035 - test_and_evaluation - [8/12] --------------> finish predictor ------------->
+2021-09-23 11:46:50,035 - test_and_evaluation - [9/12] --------------> start predictor ------------->
+2021-09-23 11:46:50,312 - test_and_evaluation - [9/12] --------------> finish predictor ------------->
+2021-09-23 11:46:50,312 - test_and_evaluation - [10/12] --------------> start predictor ------------->
+2021-09-23 11:46:50,582 - test_and_evaluation - [10/12] --------------> finish predictor ------------->
+2021-09-23 11:46:50,582 - test_and_evaluation - [11/12] --------------> start predictor ------------->
+2021-09-23 11:46:50,854 - test_and_evaluation - [11/12] --------------> finish predictor ------------->
+2021-09-23 11:46:50,855 - test_and_evaluation - [12/12] --------------> start predictor ------------->
+2021-09-23 11:46:51,131 - test_and_evaluation - [12/12] --------------> finish predictor ------------->
+2021-09-23 11:48:07,691 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:48:07,693 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:48:07,693 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:48:11,402 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:48:11,716 - test_and_evaluation - [1/12] --------------> finish predictor ------------->
+2021-09-23 11:48:11,717 - test_and_evaluation - [2/12] --------------> start predictor ------------->
+2021-09-23 11:48:12,040 - test_and_evaluation - [2/12] --------------> finish predictor ------------->
+2021-09-23 11:48:12,040 - test_and_evaluation - [3/12] --------------> start predictor ------------->
+2021-09-23 11:48:12,359 - test_and_evaluation - [3/12] --------------> finish predictor ------------->
+2021-09-23 11:48:12,359 - test_and_evaluation - [4/12] --------------> start predictor ------------->
+2021-09-23 11:48:12,942 - test_and_evaluation - [4/12] --------------> finish predictor ------------->
+2021-09-23 11:48:12,958 - test_and_evaluation - [5/12] --------------> start predictor ------------->
+2021-09-23 11:48:13,696 - test_and_evaluation - [5/12] --------------> finish predictor ------------->
+2021-09-23 11:48:13,709 - test_and_evaluation - [6/12] --------------> start predictor ------------->
+2021-09-23 11:48:14,453 - test_and_evaluation - [6/12] --------------> finish predictor ------------->
+2021-09-23 11:48:14,453 - test_and_evaluation - [7/12] --------------> start predictor ------------->
+2021-09-23 11:48:15,272 - test_and_evaluation - [7/12] --------------> finish predictor ------------->
+2021-09-23 11:48:15,272 - test_and_evaluation - [8/12] --------------> start predictor ------------->
+2021-09-23 11:48:15,905 - test_and_evaluation - [8/12] --------------> finish predictor ------------->
+2021-09-23 11:48:15,906 - test_and_evaluation - [9/12] --------------> start predictor ------------->
+2021-09-23 11:48:16,681 - test_and_evaluation - [9/12] --------------> finish predictor ------------->
+2021-09-23 11:48:16,692 - test_and_evaluation - [10/12] --------------> start predictor ------------->
+2021-09-23 11:48:17,477 - test_and_evaluation - [10/12] --------------> finish predictor ------------->
+2021-09-23 11:48:17,478 - test_and_evaluation - [11/12] --------------> start predictor ------------->
+2021-09-23 11:48:17,822 - test_and_evaluation - [11/12] --------------> finish predictor ------------->
+2021-09-23 11:48:17,822 - test_and_evaluation - [12/12] --------------> start predictor ------------->
+2021-09-23 11:48:18,157 - test_and_evaluation - [12/12] --------------> finish predictor ------------->
+2021-09-23 11:50:48,275 - test_and_evaluation - 
+
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+2021-09-23 11:50:48,277 - test_and_evaluation - info:
+    author: beanyc
+    report_version: v1.0
+pre_process:
+    switch: True
+    size:
+        col_list: 
+            - 6
+            - 6
+            - 6
+            - 6
+        half_plate: True
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
+    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
+img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
+output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+model:
+    safe:
+        threshold:
+            glass: 0.9
+            cell: 0.9
+            edge: 0.9
+            mid: 0.9
+        # model_dir: '/data/wg_train/modeling/detectron2/safedistance/longi_jstz/trains/lgjstz_zj_9bb_dan_half_166_safedistance_210804'
+img_type: jpg
+2021-09-23 11:50:48,280 - test_and_evaluation - 
+>>>>>>>>----------------------------------------------------------------<<<<<<<<
+
+
+2021-09-23 11:50:51,320 - test_and_evaluation - [1/12] --------------> start predictor ------------->
+2021-09-23 11:50:51,629 - test_and_evaluation - [1/12] --------------> finish predictor ------------->
+2021-09-23 11:50:51,629 - test_and_evaluation - [2/12] --------------> start predictor ------------->
+2021-09-23 11:50:51,952 - test_and_evaluation - [2/12] --------------> finish predictor ------------->
+2021-09-23 11:50:51,953 - test_and_evaluation - [3/12] --------------> start predictor ------------->
+2021-09-23 11:50:52,270 - test_and_evaluation - [3/12] --------------> finish predictor ------------->
+2021-09-23 11:50:52,270 - test_and_evaluation - [4/12] --------------> start predictor ------------->
+2021-09-23 11:50:52,845 - test_and_evaluation - [4/12] --------------> finish predictor ------------->
+2021-09-23 11:50:52,846 - test_and_evaluation - [5/12] --------------> start predictor ------------->
+2021-09-23 11:50:53,518 - test_and_evaluation - [5/12] --------------> finish predictor ------------->
+2021-09-23 11:50:53,540 - test_and_evaluation - [6/12] --------------> start predictor ------------->
+2021-09-23 11:50:54,200 - test_and_evaluation - [6/12] --------------> finish predictor ------------->
+2021-09-23 11:50:54,207 - test_and_evaluation - [7/12] --------------> start predictor ------------->
+2021-09-23 11:50:54,910 - test_and_evaluation - [7/12] --------------> finish predictor ------------->
+2021-09-23 11:50:54,911 - test_and_evaluation - [8/12] --------------> start predictor ------------->
+2021-09-23 11:50:55,568 - test_and_evaluation - [8/12] --------------> finish predictor ------------->
+2021-09-23 11:50:55,568 - test_and_evaluation - [9/12] --------------> start predictor ------------->
+2021-09-23 11:50:56,313 - test_and_evaluation - [9/12] --------------> finish predictor ------------->
+2021-09-23 11:50:56,313 - test_and_evaluation - [10/12] --------------> start predictor ------------->
+2021-09-23 11:50:56,938 - test_and_evaluation - [10/12] --------------> finish predictor ------------->
+2021-09-23 11:50:56,938 - test_and_evaluation - [11/12] --------------> start predictor ------------->
+2021-09-23 11:50:57,287 - test_and_evaluation - [11/12] --------------> finish predictor ------------->
+2021-09-23 11:50:57,287 - test_and_evaluation - [12/12] --------------> start predictor ------------->
+2021-09-23 11:50:57,612 - test_and_evaluation - [12/12] --------------> finish predictor ------------->
