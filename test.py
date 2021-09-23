@@ -7,9 +7,9 @@ import time
 import glob
 import shutil
 import numpy as np
-sys.path.append('/home/detectron2_repo/projects/PointRend')
+# sys.path.append('/home/detectron2_repo/projects/PointRend')
 from detectron2.config import get_cfg
-from point_rend import add_pointrend_config
+# from point_rend import add_pointrend_config
 
 from src.common.pre_process import pre_process
 from src.utils import GridCutSafe, get_logger
@@ -75,10 +75,10 @@ class Config:
                 return 1
 
         # 判断模型路径是否存在
-        for i in self.MODEL.values():
-            if not os.path.exists(i['model_dir']):
-                logger.info('path: {} not exists!'.format(i['model_dir']))
-                return 1
+        # for i in self.MODEL.values():
+        #     if not os.path.exists(i['model_dir']):
+        #         logger.info('path: {} not exists!'.format(i['model_dir']))
+        #         return 1
 
         # 创建输出文件夹
         if os.path.exists(self.OUTPUT_FOLDER):
@@ -104,22 +104,22 @@ class Config:
             return 1
 
 
-def model_init(model_dir):
-    config_file = os.path.join(model_dir, 'configs/pointrend_rcnn_R_50_FPN_1x_coco.yaml')
-    weights = os.path.join(model_dir, 'output/model_final.pth')
-    cfg = get_cfg()
-    add_pointrend_config(cfg)
-    cfg.merge_from_file(config_file)
-    # manual override some options
-    cfg.merge_from_list(["MODEL.DEVICE", "cuda"])
-    cfg.merge_from_list(["MODEL.WEIGHTS", weights])
-    cfg.freeze()
-    demo = VisualizationDemo(cfg)
+# def model_init(model_dir):
+#     config_file = os.path.join(model_dir, 'configs/pointrend_rcnn_R_50_FPN_1x_coco.yaml')
+#     weights = os.path.join(model_dir, 'output/model_final.pth')
+#     cfg = get_cfg()
+#     add_pointrend_config(cfg)
+#     cfg.merge_from_file(config_file)
+#     # manual override some options
+#     cfg.merge_from_list(["MODEL.DEVICE", "cuda"])
+#     cfg.merge_from_list(["MODEL.WEIGHTS", weights])
+#     cfg.freeze()
+#     demo = VisualizationDemo(cfg)
 
-    with open(os.path.join(model_dir, 'output/labels.json'), 'r') as f:
-        labels_datasets = json.load(f)
+#     with open(os.path.join(model_dir, 'output/labels.json'), 'r') as f:
+#         labels_datasets = json.load(f)
         
-    return demo, labels_datasets
+#     return demo, labels_datasets
 
 
 def plot_dists(img, defects):
@@ -165,13 +165,13 @@ def main():
     
     # --------------------------------------------------------
     # 二、模型初始化
-    MODEL = cfgs.MODEL['safe']
-    glass_threshold = MODEL['threshold']['glass']
-    cell_threshold = MODEL['threshold']['cell']
-    edge_threshold = MODEL['threshold']['edge']
-    mid_threshold = MODEL['threshold']['mid']
-    demo, labels_datasets = model_init(MODEL['model_dir'])
-    logger.info('[PART2]!!!start model init with {}'.format(str(labels_datasets)))
+    # MODEL = cfgs.MODEL['safe']
+    # glass_threshold = MODEL['threshold']['glass']
+    # cell_threshold = MODEL['threshold']['cell']
+    # edge_threshold = MODEL['threshold']['edge']
+    # mid_threshold = MODEL['threshold']['mid']
+    # demo, labels_datasets = model_init(MODEL['model_dir'])
+    # logger.info('[PART2]!!!start model init with {}'.format(str(labels_datasets)))
     
     # --------------------------------------------------------
     # 三、模型检测
@@ -189,44 +189,42 @@ def main():
             try:
                 undistort_path = PRE_PROCESS['size']['undistort']
                 concat_path = PRE_PROCESS['size']['concat']
-                print('---------hi 2------------- ')
                 col_list = PRE_PROCESS['size']['col_list']
-                print('---------hi 3------------- ')
-                el_data = pre_process(img, undistort_path, concat_path, col_list)         # error
-                print('---------hi 4------------- ')
+                el_data = pre_process(img, undistort_path, concat_path, col_list)
                 img_data = el_data['img_info']['img_cv2']
                 cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'preprocessed', '{}.jpg'.format(img_name)), img_data)  # + 保存正畸、透视、切黑边、resize的图
-                print('img_data:',img_data.shape)
-                grid_cuttor = GridCutSafe(el_data)
-                print('---------hi 5------------- ')
-                cut_lr_images, cut_ud_images = grid_cuttor.grid_cut_safe(130, 130)
-                print('---------hi defects------------- ')
+                # print('img_data:',img_data.shape)
+                # grid_cuttor = GridCutSafe(el_data)
+                # print('---------hi 5------------- ')
+                # cut_lr_images, cut_ud_images = grid_cuttor.grid_cut_safe(130, 130)
+                # print('---------hi defects------------- ')
 
-                defects = detector(demo, img_name, cfgs.IMG_CUT_FOLDER, os.path.join(cfgs.OUTPUT_FOLDER, 'masks'), cut_ud_images, cut_lr_images, labels_datasets, \
-                                   grid_cuttor.section_idx, glass_threshold, cell_threshold, edge_threshold, mid_threshold, 15)
-                img1, img2, img3, img4 = plot_dists(img_data, defects)
-                cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-1.jpg'.format(img_name)), img1)
-                cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-2.jpg'.format(img_name)), img2)
-                cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-3.jpg'.format(img_name)), img3)
-                cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-4.jpg'.format(img_name)), img4)
-                logger.info('defects {}'.format(defects))
+                # defects = detector(demo, img_name, cfgs.IMG_CUT_FOLDER, os.path.join(cfgs.OUTPUT_FOLDER, 'masks'), cut_ud_images, cut_lr_images, labels_datasets, \
+                #                    grid_cuttor.section_idx, glass_threshold, cell_threshold, edge_threshold, mid_threshold, 15)
+                # img1, img2, img3, img4 = plot_dists(img_data, defects)
+                # cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-1.jpg'.format(img_name)), img1)
+                # cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-2.jpg'.format(img_name)), img2)
+                # cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-3.jpg'.format(img_name)), img3)
+                # cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'dists', '{}-4.jpg'.format(img_name)), img4)
+                # logger.info('defects {}'.format(defects))
             except:
                 print('---------pre-process error------------- ')                                                       #+
             logger.info('[{}/{}] --------------> finish predictor ------------->'.format(i+1, img_len))
             
     else:
-        img_list = glob.glob(os.path.join(cfgs.IMG_CUT_FOLDER, '*.{}'.format(cfgs.IMG_TYPE)))
-        img_len = len(img_list)
-        for i, img in enumerate(img_list):
-            img_name = os.path.splitext(os.path.basename(img))[0]
-            logger.info('[{}/{}] --------------> start predictor ------------->'.format(i+1, img_len))
-            try:
-                img_data = cv2.imread(img)
-                masks, scores, labels, bboxes = detect_mini(demo, img_data)
-                cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'masks', '{}.jpg'.format(img_name)), plot_min(ud_image, masks, scores, labels, bboxes))
-            except:
-                pass
-            logger.info('[{}/{}] --------------> finish predictor ------------->'.format(i+1, img_len))
+        # img_list = glob.glob(os.path.join(cfgs.IMG_CUT_FOLDER, '*.{}'.format(cfgs.IMG_TYPE)))
+        # img_len = len(img_list)
+        # for i, img in enumerate(img_list):
+        #     img_name = os.path.splitext(os.path.basename(img))[0]
+        #     logger.info('[{}/{}] --------------> start predictor ------------->'.format(i+1, img_len))
+        #     try:
+        #         img_data = cv2.imread(img)
+        #         masks, scores, labels, bboxes = detect_mini(demo, img_data)
+        #         cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'masks', '{}.jpg'.format(img_name)), plot_min(ud_image, masks, scores, labels, bboxes))
+        #     except:
+        #         pass
+        #     logger.info('[{}/{}] --------------> finish predictor ------------->'.format(i+1, img_len))
+        pass
             
 if __name__ == "__main__":
     main()
