@@ -10,11 +10,11 @@ pre_process:
             - 6
             - 6
         half_plate: True
-        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'
-        concat: 'D:\repos\img_preprocess\preprocess_param\wg_0618.pkl'
-    origin_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\temp'
-img_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\data_cut'
-output_folder: 'D:\imgdata\zj\cpdistance\tmp_workspace\output'
+        undistort: 'D:\repos\img_preprocess\preprocess_param\camera_all.pkl'  # 相机正畸文件
+        concat: 'D:\repos\img_preprocess\preprocess_param\wg_1121.pkl'        # 分段图拼图文件
+    origin_folder: 'D:\repos\img_preprocess\data\1121wg_pwyw\rename'          # 按照WG图序的重命名的原始分段图
+img_folder: 'D:\repos\img_preprocess\data\1121wg_pwyw\slice'
+output_folder: 'D:\repos\img_preprocess\data\1121wg_pwyw\output'
 model:
     safe:
         threshold:

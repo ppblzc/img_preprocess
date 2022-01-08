@@ -196,15 +196,20 @@ def main():
                 print('---------hi 4------------- ')
                 img_data = el_data['img_info']['img_cv2']
                 cv2.imwrite(os.path.join(cfgs.OUTPUT_FOLDER, 'preprocessed', '{}.jpg'.format(img_name)), img_data)  # + 保存正畸、透视、切黑边、resize的图
-                print('img_data:',img_data.shape)
+                # print('img_data:',img_data.shape)
                 grid_cuttor = GridCutSafe(el_data)
-                print('---------hi 5------------- ')
+                # print('---------hi 5------------- ')
+                
                 cut_lr_images, cut_ud_images = grid_cuttor.grid_cut_safe(110, 110)
                 #cut_lr_images = grid_cuttor.grid_cut_safe(110)
                 for key, lr_image in cut_lr_images.items():
                     cv2.imwrite(os.path.join(cfgs.IMG_CUT_FOLDER, '{}-{}.jpg'.format(img_name, str(key))), lr_image)
                 for key, ud_image in cut_ud_images.items():
                     cv2.imwrite(os.path.join(cfgs.IMG_CUT_FOLDER, '{}-{}.jpg'.format(img_name, str(key))), ud_image)
+
+                # images_by_grid_pian = grid_cuttor.grid_cut_pian()
+                # for key, pian_image in images_by_grid_pian.items():
+                #     cv2.imwrite(os.path.join(cfgs.IMG_CUT_FOLDER, '{}-{}.jpg'.format(img_name, str(key))), pian_image)
 
                 # defects = detector(demo, img_name, cfgs.IMG_CUT_FOLDER, os.path.join(cfgs.OUTPUT_FOLDER, 'masks'), cut_ud_images, cut_lr_images, labels_datasets, \
                 #                    grid_cuttor.section_idx, glass_threshold, cell_threshold, edge_threshold, mid_threshold, 15)

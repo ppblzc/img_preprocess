@@ -94,3 +94,41 @@ class GridCutSafe:
             
         return cut_lr_images,cut_ud_images
     
+
+    def grid_cut_pian(self):
+        # img_info = el_data.img_info
+        img_data = self.img_data
+        section_col = self.section_idx[1]
+        rows, cols = self.rows, self.cols
+        row_lines, col_lines = self.row_lines, self.col_lines
+
+        # logging.warning('row_lines: %s, col_lines: %s', row_lines, col_lines)
+        # cut_images = {}
+        
+        # cell_height =  self.row_lines[-1] - self.row_lines[-2] 
+        # if  section_col== 0 or section_col== 2:
+        #     col_list = list(range(1 , cols ))
+        # else:
+        #     col_list = list(range( cols))
+
+        # x_pad = 135
+        # for row in range(rows):
+        #     for col in col_list:
+        #         key = (row_lines[row], col_lines[col])
+        #         left_point = max(col_lines[col] - x_pad, 0)
+        #         right_point = min(col_lines[col] + x_pad, img_data.shape[1])
+        #         cut_images[key] = cv2.transpose(img_data[row_lines[row]+ int(cell_height*shrink_value) :row_lines[row + 1] - int(cell_height*shrink_value), left_point:right_point, :])
+        # logging.warning('cut_images_pian.keys: %s', cut_images.keys())
+        logging.warning('row_lines: %s, col_lines: %s', row_lines, col_lines)
+        logging.warning('rows: %s, cols: %s', rows, cols)
+        cut_images = {}
+
+        for row in range(rows):
+            for col in range(0,cols,2):
+                key = (row_lines[row], col_lines[col])
+                img = img_data[row_lines[row]: row_lines[row+1], col_lines[col]: col_lines[col+2], :]
+                cut_images[key] = img
+        logging.warning('cut_images.keys: %s', cut_images.keys())
+
+        return cut_images
+        
